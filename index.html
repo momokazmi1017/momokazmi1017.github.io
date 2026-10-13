@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammed Kazmi | Aerospace Engineer</title>
+<meta name="description" content="Mohammed (Momo) Kazmi, aerospace engineer from UC Irvine. Spacecraft thermal, propulsion and mechanical systems. Projects in rocket engine design, 6-DOF flight simulation, navigation and spacecraft thermal control.">
+<meta property="og:title" content="Mohammed Kazmi | Aerospace Engineer">
+<meta property="og:description" content="Spacecraft thermal, propulsion and mechanical systems. Rocket engine design, 6-DOF flight simulation, navigation and thermal control projects.">
+<meta property="og:image" content="https://momokazmi1017.github.io/img/flight_liftoff.jpg">
+<meta property="og:url" content="https://momokazmi1017.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0f1c; --bg2:#101828; --card:#131c2e; --line:#22304a;
+  --text:#e7ecf4; --muted:#9aa7bd; --accent:#f2a541; --accent2:#4fb3bf;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;font-size:16px;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.15}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(10,15,28,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:"Space Grotesk";font-weight:700;letter-spacing:.3px}
+.brand span{color:var(--accent)}
+.links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--text)}
+@media(max-width:640px){.links{display:none}}
+
+/* hero */
+.hero{position:relative;padding:96px 0 72px;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:
+  radial-gradient(1px 1px at 12% 22%,#fff8,transparent),radial-gradient(1px 1px at 72% 12%,#fff6,transparent),
+  radial-gradient(1.5px 1.5px at 85% 60%,#fff7,transparent),radial-gradient(1px 1px at 32% 78%,#fff5,transparent),
+  radial-gradient(1px 1px at 55% 40%,#fff4,transparent),radial-gradient(1.5px 1.5px at 20% 55%,#fff6,transparent),
+  radial-gradient(900px 420px at 80% -10%,#1f3a5f66,transparent),radial-gradient(700px 400px at -10% 110%,#4fb3bf22,transparent);pointer-events:none}
+.eyebrow{color:var(--accent2);font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.hero h1{font-size:clamp(40px,7vw,68px);margin:14px 0 18px}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:680px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:var(--accent);color:#1a1205;border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn:hover{border-color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.stat b{display:block;font-family:"Space Grotesk";font-size:26px;color:var(--accent)}
+.stat span{color:var(--muted);font-size:13px}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:72px 0}
+section.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{margin-bottom:34px}
+.sec-head h2{font-size:clamp(28px,4vw,38px)}
+.sec-head p{color:var(--muted);margin-top:8px;max-width:640px}
+
+/* featured projects */
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:26px}
+.proj:nth-child(even){grid-template-columns:1fr 1.1fr}
+.proj:nth-child(even) .media{order:2}
+.media{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff;aspect-ratio:16/10;display:flex;align-items:center}
+.media img{width:100%;height:100%;object-fit:contain}
+.media.dark{background:#0d1424}.media.dark img{object-fit:cover}
+.tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.5px;color:var(--accent2);background:#4fb3bf18;border:1px solid #4fb3bf44;padding:3px 10px;border-radius:999px;margin-bottom:12px}
+.proj h3{font-size:24px;margin-bottom:10px}
+.proj p{color:var(--muted);font-size:15px}
+.proj ul{list-style:none;margin:14px 0 18px}
+.proj li{position:relative;padding-left:18px;margin:6px 0;font-size:14.5px}
+.proj li:before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.plinks{display:flex;flex-wrap:wrap;gap:10px}
+.plinks a{font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid var(--line)}
+.plinks a.go{background:#f2a54122;border-color:#f2a54166;color:var(--accent)}
+.plinks a:hover{border-color:var(--muted)}
+.chain{margin:0 0 30px;padding:14px 18px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:14.5px}
+.chain b{color:var(--text)}
+@media(max-width:820px){.proj,.proj:nth-child(even){grid-template-columns:1fr}.proj:nth-child(even) .media{order:0}}
+
+/* grid cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column}
+.card .when{font-size:12.5px;color:var(--accent2);font-weight:600;letter-spacing:.4px}
+.card h3{font-size:18px;margin:8px 0 10px}
+.card p{color:var(--muted);font-size:14.5px;flex:1}
+.card .metric{margin-top:14px;font-size:13.5px;color:var(--text);border-top:1px solid var(--line);padding-top:12px}
+.card .metric b{color:var(--accent)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+
+/* experience */
+.tl{position:relative;margin-left:8px}
+.tl:before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--line)}
+.job{position:relative;padding:0 0 30px 30px}
+.job:before{content:"";position:absolute;left:-6px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.job h3{font-size:19px}
+.job .org{color:var(--accent2);font-weight:600;font-size:14.5px}
+.job .when{color:var(--muted);font-size:13.5px}
+.job ul{margin:10px 0 0 18px;color:var(--muted);font-size:14.5px}
+.job li{margin:4px 0}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skills .card h3{font-size:16px;color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{font-size:13px;padding:5px 11px;border-radius:999px;background:#ffffff0d;border:1px solid var(--line)}
+@media(max-width:820px){.skills{grid-template-columns:1fr}}
+
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.edu{grid-template-columns:1fr}}
+
+.contact{text-align:center}
+.contact h2{font-size:clamp(28px,4vw,40px)}
+.contact p{color:var(--muted);max-width:560px;margin:12px auto 26px}
+.contact .cta{justify-content:center}
+footer{padding:26px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top">Mohammed <span>Kazmi</span></a>
+  <div class="links">
+    <a href="#projects">Projects</a><a href="#academic">Academic</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="eyebrow">Aerospace Engineer &middot; UC Irvine '26</div>
+  <h1>Spacecraft thermal, propulsion<br>and mechanical systems.</h1>
+  <p class="lead">I'm Mohammed (Momo) Kazmi, an aerospace engineer who likes building things that work and proving it with data. From wind tunnel tests to rocket engine design tools, everything here is modeled, tested and validated.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">See my projects</a>
+    <a class="btn" href="https://www.linkedin.com/in/momokazmi1017" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/momokazmi1017" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="mailto:momokazmi1017@gmail.com">Email me</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>5 kN</b><span>LOX/ethanol engine designed with my own tool</span></div>
+    <div class="stat"><b>500</b><span>Monte Carlo flights, every one met requirements</span></div>
+    <div class="stat"><b>1.8 m</b><span>navigation error at 30,000 ft apogee</span></div>
+    <div class="stat"><b>22%</b><span>less community noise from a new 747 climb profile</span></div>
+  </div>
+</div></header>
+
+<section id="projects"><div class="wrap">
+  <div class="sec-head">
+    <h2>Featured engineering projects</h2>
+    <p>Independent projects in Python, each validated against textbook data or exact analytic solutions. Code, results and validation tables are public on GitHub.</p>
+  </div>
+  <div class="chain">These three connect into one rocket: <b>engine</b> &rarr; <b>vehicle and flight</b> &rarr; <b>navigation</b>. The engine tool designed the E5-75, the flight simulator sized a rocket around it, and the Kalman filter navigates that rocket.</div>
+
+  <article class="proj">
+    <div class="media"><img src="img/engine_contour.jpg" alt="E5-75 thrust chamber contour with regenerative cooling channels" loading="lazy"></div>
+    <div>
+      <span class="tag">Propulsion &middot; Python</span>
+      <h3>Liquid Rocket Engine Preliminary Design Tool</h3>
+      <p>Turns thrust, chamber pressure and propellants into a complete preliminary thrust-chamber design. Used to design the E5-75, a 5 kN (1,124 lbf) LOX / 75% ethanol regen-cooled engine at 25 bar.</p>
+      <ul>
+        <li>Equilibrium combustion (Cantera); ideal Isp within 0.6% of Sutton &amp; Biblarz</li>
+        <li>Cooling trade study cut the hot wall from 1,124 K to 758 K, under the CuCrZr limit</li>
+        <li>Method-of-characteristics nozzle solver, validated within 0.03&deg; of exact theory</li>
+      </ul>
+      <div class="plinks"><a class="go" href="https://github.com/momokazmi1017/LiquidRocketEngineprelimdesigntool" target="_blank" rel="noopener">View code and results</a></div>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div class="media dark"><img src="img/flight_liftoff.jpg" alt="3D replay of the sounding rocket at liftoff" loading="lazy"></div>
+    <div>
+      <span class="tag">Flight dynamics &middot; Python + three.js</span>
+      <h3>6-DOF Flight Simulator for a Liquid Sounding Rocket</h3>
+      <p>Six-degree-of-freedom simulator written from scratch that sizes, flies and stress-tests a 30,000 ft rocket powered by the E5-75, with an interactive 3D replay in the browser.</p>
+      <ul>
+        <li>Sized to 30,000 ft: 54 kg at liftoff, max Mach 1.70, 2.0 caliber static margin</li>
+        <li>500-flight Monte Carlo: apogee 30,080 &plusmn; 2,330 ft, all requirements met</li>
+        <li>Fin flutter check caught undersized fins; redesign raised margin from 1.32 to 2.01</li>
+      </ul>
+      <div class="plinks">
+        <a class="go" href="https://momokazmi1017.github.io/FlightSim6DOF/viewer/flight_viewer.html" target="_blank" rel="noopener">Watch the 3D flight</a>
+        <a href="https://github.com/momokazmi1017/FlightSim6DOF" target="_blank" rel="noopener">Code</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div class="media dark"><img src="img/nav_blackout.jpg" alt="3D navigation replay during a GPS blackout with the uncertainty bubble" loading="lazy"></div>
+    <div>
+      <span class="tag">GNC &middot; Python + three.js &middot; In progress</span>
+      <h3>Rocket Navigation: Error-State Kalman Filter</h3>
+      <p>A 25-state error-state EKF fuses a MEMS IMU, GPS and a barometer into position, velocity and attitude from the pad to apogee at Mach 1.7.</p>
+      <ul>
+        <li>1.8 m RMS position error and 0.30&deg; pointing error at apogee</li>
+        <li>99.7% of errors inside the filter's own 3-sigma bounds (NEES consistency test)</li>
+        <li>Rides through a 20 s GPS outage at burnout and recovers within 3 s</li>
+      </ul>
+      <div class="plinks">
+        <a class="go" href="https://momokazmi1017.github.io/RocketNavigationEKF/viewer/nav_viewer.html" target="_blank" rel="noopener">Watch the filter fly</a>
+        <a href="https://github.com/momokazmi1017/RocketNavigationEKF" target="_blank" rel="noopener">Code</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div class="media"><img src="img/starc_orbit.jpg" alt="Radiator temperature over one orbit for three coatings" loading="lazy"></div>
+    <div>
+      <span class="tag">Spacecraft thermal &middot; Python</span>
+      <h3>Adaptive Spacecraft Radiator: Heater Power Study</h3>
+      <p>First-order thermal model estimating how much heater power an adaptive-emissivity radiator coating saves over fixed coatings in low Earth orbit. Built from public data as an independent study.</p>
+      <ul>
+        <li>Lumped radiator node with solar, albedo and Earth IR loads, solved to periodic steady state</li>
+        <li>Adaptive coating removed the cold-case heater: about 47 W and 1.6 kg saved versus OSR</li>
+        <li>Transition-temperature sweep and 500-run Monte Carlo on the savings</li>
+      </ul>
+      <div class="plinks"><a class="go" href="https://github.com/momokazmi1017/StarcHeaterStudy" target="_blank" rel="noopener">View code and results</a></div>
+    </div>
+  </article>
+  <p style="color:var(--muted);font-size:13.5px">These projects were developed with an AI coding assistant (Claude Code). I defined the requirements, made the design decisions and trade-offs, and verified every model against published data and exact solutions.</p>
+</div></section>
+
+<section class="alt" id="academic"><div class="wrap">
+  <div class="sec-head">
+    <h2>Academic and hands-on work</h2>
+    <p>Design, test and analysis projects from UC Irvine, plus a long-running build in my garage.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="when">Senior Design &middot; 2026</span><h3>Boeing 787-9 Class Twin-Engine Transport</h3><p>Led the conceptual and preliminary design and built the MATLAB sizing and performance model, from mission requirements to weight, aero and performance convergence.</p><div class="metric">W/S vs T/W constraint analysis &middot; trade studies</div></div>
+    <div class="card"><span class="when">Team Lead &middot; 2024</span><h3>Oblique Wing Wind Tunnel Test</h3><p>Led the full design, build and test cycle of a NACA 4415 oblique wing. Set up and calibrated the LabVIEW data acquisition and analyzed results in MATLAB.</p><div class="metric">5 to 30 m/s &middot; sweep and attack angle sweeps</div></div>
+    <div class="card"><span class="when">2025</span><h3>Noise Abatement for the Boeing 747-400</h3><p>Modeled 747-400 takeoff noise at LAX and proposed a modified NADP1 climb profile, weighing noise against fuel burn and climb performance.</p><div class="metric">Up to <b>22%</b> lower sound exposure at 5 miles</div></div>
+    <div class="card"><span class="when">2024</span><h3>Interplanetary Mission to a Moon of Jupiter</h3><p>Designed a complete spacecraft mission, with trajectory, thrust and delta-v in MATLAB and power, comms and thermal subsystems integrated.</p><div class="metric">Orbital mechanics &middot; subsystem integration</div></div>
+    <div class="card"><span class="when">2024</span><h3>Aircraft Drag Analysis Tool</h3><p>MATLAB tool for parasitic, induced and total drag on a custom configuration, with the wing modeled in SolidWorks for wetted area.</p><div class="metric">Optimum velocity from L/D, validated by hand</div></div>
+    <div class="card"><span class="when">2020 to present</span><h3>1996 Jeep Cherokee Build</h3><p>Suspension lift, engine tuning, brake overhaul, intake and exhaust, fuel and brake lines, and electrical diagnosis with OBD-II and a multimeter.</p><div class="metric">Hands-on fabrication and troubleshooting</div></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="sec-head"><h2>Experience</h2></div>
+  <div class="tl">
+    <div class="job"><h3>Mechanical Engineering Intern</h3><div class="org">HFN Builder Inc. &middot; Hayward, CA</div><div class="when">Jun 2024 to Sep 2024</div>
+      <ul><li>Produced structural and HVAC layouts in AutoCAD</li><li>Performed load analyses and fluid flow simulations for piping and ventilation systems</li><li>Evaluated insulation performance with thermodynamics and heat transfer principles</li><li>Presented design updates in weekly reviews with the engineering team</li></ul></div>
+    <div class="job"><h3>Information Technology Associate</h3><div class="org">Cygnis Media</div><div class="when">Sep 2024 to Sep 2026</div>
+      <ul><li>Assembled, repaired and troubleshot computers and equipment</li><li>Diagnosed and resolved hardware and system issues</li></ul></div>
+    <div class="job"><h3>Calculus Teaching Assistant</h3><div class="org">Cosumnes River College &middot; Elk Grove, CA</div><div class="when">Sep 2022 to Mar 2023</div>
+      <ul><li>Tutored students across three levels of calculus in the STEM Center, using MATLAB and C/C++</li></ul></div>
+    <div class="job"><h3>Store Manager</h3><div class="org">ShareTea &middot; Elk Grove, CA</div><div class="when">May 2021 to Feb 2023</div>
+      <ul><li>Trained and led a team of 10+ while managing daily operations</li></ul></div>
+  </div>
+  <div class="edu" style="margin-top:20px">
+    <div class="card"><span class="when">Sep 2023 to Mar 2026</span><h3>University of California, Irvine</h3><p>B.S. Aerospace Engineering (ABET accredited), Minor in Materials Science. Coursework in heat and mass transfer, propulsion, astronautics, structures, controls and flight mechanics.</p></div>
+    <div class="card"><span class="when">2021 to 2023</span><h3>Sacramento City College</h3><p>Engineering transfer coursework in mathematics, physics and engineering, 4.0 GPA.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="skills"><div class="wrap">
+  <div class="sec-head"><h2>Skills</h2></div>
+  <div class="skills">
+    <div class="card"><h3>Analysis and simulation</h3><div class="chips"><span>Heat transfer</span><span>Thermodynamics</span><span>Propulsion</span><span>Compressible flow</span><span>Flight dynamics</span><span>6-DOF simulation</span><span>Orbital mechanics</span><span>Kalman filtering</span><span>Monte Carlo</span><span>FEA</span><span>CFD</span><span>Structural and load analysis</span></div></div>
+    <div class="card"><h3>Software and tools</h3><div class="chips"><span>MATLAB</span><span>Simulink</span><span>Python</span><span>C/C++</span><span>SolidWorks</span><span>CATIA</span><span>Creo</span><span>AutoCAD</span><span>ANSYS</span><span>NASTRAN</span><span>LabVIEW</span><span>STK</span><span>Git</span></div></div>
+    <div class="card"><h3>Test and hardware</h3><div class="chips"><span>Wind tunnel testing</span><span>Data acquisition</span><span>Pressure transducers</span><span>Thermocouples</span><span>Accelerometers</span><span>Vibration testing</span><span>3D printing</span><span>GD&amp;T</span><span>Multimeters</span><span>Torque tools</span></div></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Let's build something.</h2>
+  <p>I'm looking for early-career roles in spacecraft thermal, propulsion, test or mechanical design. I'd love to hear from you.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:momokazmi1017@gmail.com">momokazmi1017@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/momokazmi1017" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/momokazmi1017" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+
+<footer>&copy; 2026 Mohammed Kazmi &middot; Irvine, California</footer>
+</body>
+</html>
